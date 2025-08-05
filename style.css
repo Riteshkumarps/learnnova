@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+.header {
+  background: #003366;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header h1 {
+  font-size: 1.8rem;
+}
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #0077b6, #00b4d8);
+  color: #fff;
+}
+.hero-text {
+  flex: 1 1 400px;
+}
+.hero-img {
+  flex: 1 1 400px;
+  text-align: center;
+}
+.hero-img img {
+  width: 100%;
+  max-width: 400px;
+}
+.btn {
+  background: #ffb703;
+  color: #000;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+.features, .courses, .achievers, .testimonials, .contact {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.features-grid, .course-cards, .testimonial-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.feature-card, .course-card, .testimonial {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.feature-card img, .course-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.achiever-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.achiever-box img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #0077b6;
+}
+.testimonial p {
+  font-style: italic;
+}
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.whatsapp {
+  background-color: #25D366;
+}
+.telegram {
+  background-color: #0088cc;
+}
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .achiever-box {
+    flex-direction: column;
+  }
+}
